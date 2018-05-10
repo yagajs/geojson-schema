@@ -105,9 +105,10 @@ For further information look at the [GeoJSON specification](https://tools.ietf.o
 
 Scripts registered in package.json:
 
-* `transpile`: Transpile TypeScript Code to JavaScript
-* `lint`: Use the linter for TypeScript Code
+* `transpile`: Transpile TypeScript Code to JavaScript.
+* `lint`: Use the linter for TypeScript Code.
 * `test`: Run software-tests in node.
+* `dist`: Make everything ready for a release.
 
 ## License
 
