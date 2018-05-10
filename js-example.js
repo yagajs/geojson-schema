@@ -1,4 +1,4 @@
-const { GeoJSONValidator, validate, schemas } = require('./');
+const { GeoJSONValidator, validate, schemas } = require('./'); // @yaga/geojson-schema
 
 const point = {
     type: "Point",
