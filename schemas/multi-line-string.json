@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "id": "http://geojson.org/schema/multi-line-string",
+  "title": "MultiLineString geometry object",
+  "link": "https://tools.ietf.org/html/rfc7946#section-3.1.5",
+  "type": "object",
+  "allOf": [
+    {"$ref": "http://geojson.org/schema/geometry-object"},
+    {
+      "required": ["coordinates"],
+      "properties": {
+        "type": {
+          "enum": ["MultiLineString"]
+        },
+        "coordinates": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": { "$ref": "http://geojson.org/schema/position" }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.geometryTypes = require("./geometry-types.json");
+exports.geoJSONTypes = require("./geojson-types.json");
+exports.bbox = require("./bbox.json");
+exports.geoJSONObject = require("./geojson-object.json");
+exports.geometryObject = require("./geometry-object.json");
+exports.position = require("./position.json");
+exports.point = require("./point.json");
+exports.multiPoint = require("./multi-point.json");
+exports.lineString = require("./line-string.json");
+exports.multiLineString = require("./multi-line-string.json");
+exports.polygon = require("./polygon.json");
+exports.multiPolygon = require("./multi-polygon.json");
+exports.geometryCollection = require("./geometry-collection.json");
+exports.anyGeometry = require("./any-geometry.json");
+exports.feature = require("./feature.json");
+exports.featureCollection = require("./feature-collection.json");

@@ -1,0 +1,40 @@
+{
+  "name": "@yaga/geojson-schema",
+  "version": "1.0.0",
+  "author": "Arne Schubert <atd.schubert@gmail.com>",
+  "description": "JSON schema files and a validator for the GeoJSON specification",
+  "homepage": "https://github.com/yagajs/geojson-schema#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "npm test",
+    "test": "npm run lint && npm run transpile && mocha",
+    "lint": "tslint index.ts schemas/index.ts",
+    "transpile": "tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yagajs/geojson-schema.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yagajs/geojson-schema/issues"
+  },
+  "keywords": [
+    "geojson",
+    "jsonschema",
+    "spatial",
+    "geo"
+  ],
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "mocha": "^5.1.1",
+    "tslint": "^5.10.0",
+    "typescript": "^2.8.3"
+  },
+  "dependencies": {
+    "jsonschema": "^1.2.4",
+    "ts-node": "^6.0.3"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "id": "http://geojson.org/schema/any-geometry",
+  "title": "GeoJSON geometry types",
+  "description": "A helper schema for merging all possible geometries.",
+  "link":"https://tools.ietf.org/html/rfc7946#section-3",
+  "type": {
+    "oneOf": [
+      { "$ref": "http://geojson.org/schema/point" },
+      { "$ref": "http://geojson.org/schema/multi-point" },
+      { "$ref": "http://geojson.org/schema/line-string" },
+      { "$ref": "http://geojson.org/schema/multi-line-string" },
+      { "$ref": "http://geojson.org/schema/polygon" },
+      { "$ref": "http://geojson.org/schema/multi-polygon" },
+      { "$ref": "http://geojson.org/schema/geometry-collection" }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "id": "http://geojson.org/schema/bbox",
+  "title": "GeoJSON bounding box",
+  "description": "Geo-spatial bounding box.",
+  "link":"https://tools.ietf.org/html/rfc7946#section-5",
+  "oneOf": [
+    {
+      "type": "array",
+      "minItems": 4,
+      "additionalItems": false,
+      "items": [
+        { "type": "number", "maximum": 180, "minimum": -180, "description": "West border of the bounding box" },
+        { "type": "number", "maximum": 90, "minimum": -90, "description": "South border of the bounding box" },
+        { "type": "number", "maximum": 180, "minimum": -180, "description": "East border of the bounding box" },
+        { "type": "number", "maximum": 90, "minimum": -90, "description": "North border of the bounding box" }
+      ]
+    },
+    {
+      "type": "array",
+      "minItems": 6,
+      "additionalItems": false,
+      "items": [
+        { "type": "number", "maximum": 180, "minimum": -180, "description": "West border of the bounding box" },
+        { "type": "number", "maximum": 90, "minimum": -90, "description": "South border of the bounding box" },
+        { "type": "number", "description": "Minimal height of the bounding box" },
+        { "type": "number", "maximum": 180, "minimum": -180, "description": "East border of the bounding box" },
+        { "type": "number", "maximum": 90, "minimum": -90, "description": "North border of the bounding box" },
+        { "type": "number", "description": "Maximal height of the bounding box" }
+      ]
+    }
+  ]
+}

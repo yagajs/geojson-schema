@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "id": "http://geojson.org/schema/position",
+  "title": "GeoJSON Position",
+  "description": "A Position is an array of coordinates",
+  "link": "https://tools.ietf.org/html/rfc7946#section-3.1.1",
+  "type": "array",
+  "minItems": 2,
+  "maxItems": 3,
+  "items": [
+    { "type": "number", "maximum": 180, "minimum": -180, "description": "Longitude of a position" },
+    { "type": "number", "maximum": 90, "minimum": -90, "description": "Latitude of a position" },
+    { "type": "number", "description": "Altitude of a position" }
+  ],
+  "additionalItems": false
+}

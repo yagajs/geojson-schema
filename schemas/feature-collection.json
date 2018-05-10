@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "id": "http://geojson.org/schema/feature-collection",
+  "title": "MultiLineString geometry object",
+  "link": "https://tools.ietf.org/html/rfc7946#section-3.3",
+  "type": "object",
+  "allOf": [
+    {"$ref": "http://geojson.org/schema/geosjon-object"},
+    {
+      "required": ["features"],
+      "properties": {
+        "type": {
+          "enum": ["FeatureCollection"]
+        },
+        "features": {
+          "description": "A list of features associated with the collection",
+          "type": "array",
+          "items": { "$ref": "http://geojson.org/schema/feature" }
+        }
+      }
+    }
+  ]
+}
+
+
+

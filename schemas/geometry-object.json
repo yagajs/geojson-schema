@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "id": "http://geojson.org/schema/geometry-object",
+  "title": "Any geometry object",
+  "description": "A schema to match on any geometry type.",
+  "link":"https://tools.ietf.org/html/rfc7946#section-3",
+  "allOf": [
+    { "$ref": "http://geojson.org/schema/geojson-object" },
+    {
+      "properties": {
+        "type": { "$ref": "http://geojson.org/schema/geometry-types" }
+      }
+    }
+  ]
+}

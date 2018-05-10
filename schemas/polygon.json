@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "id": "http://geojson.org/schema/polygon",
+  "title": "Polygon geometry object",
+  "link": "https://tools.ietf.org/html/rfc7946#section-3.1.6",
+  "type": "object",
+  "allOf": [
+    {"$ref": "http://geojson.org/schema/geometry-object"},
+    {
+      "required": ["coordinates"],
+      "properties": {
+        "type": {
+          "enum": ["Polygon"]
+        },
+        "coordinates": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "minItems": 4,
+            "items": { "$ref": "http://geojson.org/schema/position" }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "id": "http://geojson.org/schema/geojson-object",
+  "title": "The base GeoJSON object",
+  "link": "https://tools.ietf.org/html/rfc7946#section-3",
+  "type": "object",
+  "required": ["type"],
+  "properties": {
+    "type": { "$ref": "http://geojson.org/schema/geojson-types" },
+    "bbox": { "$ref": "http://geojson.org/schema/bbox" }
+  }
+}
